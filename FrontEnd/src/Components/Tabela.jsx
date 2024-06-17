@@ -35,14 +35,14 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 const Tabela = ({ tipo, shouldFetch, setShouldFetch }) => {
   
-  // Estado para armazenar os itens da tabela, o ID do item em edição, valores editados, etc.
+  
   const [itens, setItens] = useState([]);
   const [editId, setEditId] = useState(null);
   const [editValues, setEditValues] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [editingField, setEditingField] = useState(null);
   
-  // Campos personalizados para cada tipo de tabela (produto ou funcionário)
+  
   const camposPersonalizados = {
     produto: ['ID', 'Nome', 'Quantidade'],
     funcionario: ['ID', 'Nome', 'Cargo']
